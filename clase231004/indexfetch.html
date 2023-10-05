@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Fetch</title>
+   </head>
+   <body>
+      Nombre de usuario a Buscar: <input type="text" id="username" value=""> <br>
+      <button id="buscar">Buscar</button>
+      <div id="result"></div>
+      <script>
+         const result=document.querySelector("#result");
+         const buscar=document.querySelector("#buscar");
+         let furl = "https://api.github.com/search/users?q=";
+
+         buscar.addEventListener('click', (event)=>{
+            const username = document.querySelector("#username");
+            
+            fetch(furl+username.value)
+               .then(res=>res.json())
+               .then(
+                  data =>{
+                     result.innerHTML="";
+                     for(let user of data.items){
+                        let salto = document.createElement("br")
+                        let a = document.createElement("a");
+                        a.text=user.login;
+                        a.href=user.html_url;
+                        result.appendChild(salto);
+                        result.appendChild(a);
+                     }
+                  }
+               ).catch(err=>console.error(err));
+
+
+         });
+      </script>
+   </body>
+</html>

@@ -1,0 +1,21 @@
+/* Estilo base para el contenedor */
+.contenedor {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no haya suficiente espacio */
+  justify-content: space-between; /* Espacio uniforme entre las columnas */
+}
+
+/* Estilo de las columnas */
+.columna {
+  flex-basis: calc(50% - 10px); /* El 10px es el espacio entre las columnas */
+  margin-bottom: 20px; /* Espacio entre las filas */
+  padding: 10px;
+  box-sizing: border-box; /* Asegura que el padding no aumente el tamaño de las columnas */
+}
+
+/* Estilos específicos para dispositivos más pequeños */
+@media screen and (max-width: 768px) {
+  .columna {
+      flex-basis: 100%; /* Cambia a una sola columna en pantallas más pequeñas */
+  }
+}

@@ -1,0 +1,98 @@
+#container{
+    background-image: url('../assets/math.webp');
+    width: 315px;
+    height: 500px;
+    border-radius: 10px;
+    
+}
+
+#display{
+    width: 250px;
+    height: 100px;
+    background-color: rgb(48, 48, 47);
+    text-align: center;
+    margin-left: 26px;
+    position: relative;
+    top: 50px;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+.displayEstiloPlaya{
+    background: linear-gradient(rgb(33,157,234),rgb(70,69,69));
+}
+.displayEstiloJungla{
+    background: linear-gradient(rgb(1,83,4),rgb(70,69,69));
+}
+.displayEstiloCafe{
+    background: linear-gradient(rgb(235,166,28),rgb(70,69,69));
+}
+.displayEstiloOficina{
+    background: linear-gradient(rgb(81,85,81),rgb(70,69,69));
+}
+
+#valoresDeEntrada{
+    width: 315px;
+    height: 50px;
+    position: relative;
+    margin-top: 100px;
+}
+#botones{
+    
+    
+    text-align: center;
+}
+
+input{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: small;
+    font-family: cursive;
+    background: rgb(222, 216, 216);
+    text-align: center;
+    position: relative;
+    margin-left: 28px;
+}
+#sumar{
+    position: relative;
+    margin-left: 28px;
+}
+#restar{
+    position: relative;
+    margin-left: 28px;
+}
+#multiplicar{
+    position: relative;
+    margin-left: 28px;
+}
+#dividir{
+    position: relative;
+    margin-left: 28px;
+}
+
+#Playa,#Jungla,#Cafe,#Oficina{
+    border-radius: 50px;
+    height: 25px;
+    width: 25px;
+    position: relative;
+    margin-left: 38px;
+    margin-top: 200px;
+    border: 5px;
+
+}
+#Playa{
+    background: linear-gradient(rgb(33,157,234),rgb(70,69,69));
+}
+
+#Jungla{
+    background: linear-gradient(rgb(1,83,4),rgb(70,69,69));
+}
+
+#Cafe{
+    background: linear-gradient(rgb(235,166,28),rgb(70,69,69));
+}
+
+#Oficina{
+    background: linear-gradient(rgb(81,85,81),rgb(70,69,69));
+}

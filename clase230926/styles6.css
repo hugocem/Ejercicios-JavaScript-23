@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo base para el contenedor */
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Estilo de los elementos de la cuadrícula */
+.item {
+    flex: 1 1 200px; /* Flex grow, flex shrink, flex basis */
+    margin: 10px;
+    max-width: 400px; /* Máximo ancho del elemento */
+}
+
+/* Estilo de las imágenes */
+.item img {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+}

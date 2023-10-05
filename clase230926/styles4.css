@@ -1,0 +1,39 @@
+/* Reset de estilos básicos para el cuerpo y la lista sin puntos */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Establece un fondo de color de fondo y margen exterior */
+.container {
+  display: flex; /* Activa Flexbox */
+  flex-wrap: wrap; /* Permite que las columnas se ajusten automáticamente */
+  justify-content: space-between; /* Espacio entre columnas */
+  background-color: #f0f0f0; /* Color de fondo */
+  margin: 20px; /* Margen exterior */
+  padding: 10px; /* Espacio interior entre el borde y las columnas */
+}
+
+/* Establece el estilo de las columnas */
+.column {
+  flex: 1; /* Hace que las columnas se expandan automáticamente */
+  margin: 10px; /* Margen entre columnas */
+  padding: 20px; /* Espacio interior de las columnas */
+  background-color: #ffffff; /* Color de fondo de las columnas */
+  border: 1px solid #ddd; /* Borde con sombra */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .column {
+      flex-basis: calc(50% - 20px); /* Dos columnas por fila en pantallas pequeñas */
+  }
+}
+
+/* Estilo para pantallas aún más pequeñas */
+@media (max-width: 480px) {
+  .column {
+      flex-basis: 100%; /* Una columna por fila en pantallas muy pequeñas */
+  }
+}
