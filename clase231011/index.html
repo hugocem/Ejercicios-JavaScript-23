@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/index.css">
+</head>
+<body>
+    <form id="addform">
+        <ul>
+            <li>
+                <label for="apellido">Apellido: </label>
+                <input type="text" id="apellido" name="apellido">
+            </li>
+            <li>
+                <label for="nombres">Nombres: </label>
+                <input type="text" id="nombres" name="nombres">
+            </li>
+            <li>
+                <label for="fechanacimiento">Fecha de Nacimiento: </label>
+                <input type="date" id="fechanacimiento" name="fechanacimiento">
+            </li>
+            <li>
+                <label for="numerocelular">Número de Celular: </label>
+                <input type="text" id="numerocelular" name="numerocelular">
+            </li>
+            
+        </ul>
+        <input type="submit" value="Agregar">
+    </form>
+
+    <form id="userform">
+        <input type="submit" value="Buscar">
+
+    </form>
+    <div id="result">
+
+    </div>
+
+   <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+   <script src="./node_modules/axios/dist/axios.min.js"></script> 
+   <script src="./src/js/index.js"></script>
+</body>
+</html>
