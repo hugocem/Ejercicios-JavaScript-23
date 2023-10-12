@@ -1,0 +1,53 @@
+{
+  "personas": [
+    {
+      "id": 1,
+      "apellido": "Sun",
+      "nombres": "Java1",
+      "fechananicimiento": "2023-04-04",
+      "numerocelular": "123456"
+    },
+    {
+      "id": 2,
+      "apellido": "Oracle",
+      "nombres": "Java",
+      "fechananicimiento": "2023-04-04",
+      "numerocelular": "123"
+    },
+    {
+      "nombres": "Microsof",
+      "apellido": "Lara",
+      "id": 3,
+      "fechananicimiento": "2023-04-04",
+      "numerocelular": "456"
+    },
+    {
+      "id": 4,
+      "apellido": "Lovelace",
+      "nombres": "Ada",
+      "fechananicimiento": "2023-04-04",
+      "numerocelular": "8987"
+    },
+    {
+      "apellido": "Linux",
+      "nombres": "Git",
+      "id": 5,
+      "fechananicimiento": "2023-04-04",
+      "numerocelular": "44444"
+    },
+    {
+      "apellido": "JavaScript23",
+      "nombres": "JS",
+      "fechanacimiento": "2023-10-11",
+      "numerocelular": "87654321",
+      "id": 6
+    },
+    {
+      "apellido": "M",
+      "nombres": "Cesar",
+      "fechanacimiento": "2022-02-02",
+      "numerocelular": "123456",
+      "id": 7
+    }
+  ]
+}
