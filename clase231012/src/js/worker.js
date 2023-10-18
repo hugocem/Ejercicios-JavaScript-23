@@ -25,13 +25,13 @@ self.onmessage = function (e) {
   const start = e.data.start;
   const end = e.data.end;
 
-  const primes = pares(start, end);
+  const pares = par(start, end);
 
-  self.postMessage(primes);
+  self.postMessage(pares);
   self.close();
 };
 
-function pares(start, end) {
+function par(start, end) {
   const resultado = [];
 
   for (let i = start; i <= end; i++) {
