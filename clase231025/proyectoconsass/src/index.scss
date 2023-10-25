@@ -1,0 +1,19 @@
+.micomp {
+    background-color: #f0f0f0;
+    padding: 20px;
+    .titulo {
+        font-size: 24px;
+        color: #333;
+    }
+    .boton {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        &:hover {
+            background-color: yellow;
+        }
+    }
+}
+    
